@@ -6,12 +6,16 @@
 
 This application is provided by udacity to implement the deployment skills learned during the course.
 
-### Dependencies
+### App Dependencies
 
 ```
 - Node.js
 
 - npm
+
+- A S3 bucket for hosting uploaded pictures.
+
+- A server running on ElasticBeanstalk.
 
 - AWS CLI
 
@@ -19,9 +23,6 @@ This application is provided by udacity to implement the deployment skills learn
 
 - A RDS database running Postgres.
 
-- A server running on ElasticBeanstalk.
-
-- A S3 bucket for hosting uploaded pictures.
 
 ```
 ## Testing
