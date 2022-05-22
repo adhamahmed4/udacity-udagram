@@ -17,21 +17,27 @@ jobs:
         - aws-cli/install
         - aws-cli/setup
 
+        #This script install the Frontend node_modules
         - run:
             name: Install Frontend node_modules
             command: npm run frontend-install
+        #This script install the Backend node_modules
         - run:
             name: Install Backend node_modules
             command: npm run backend-install
+        #This script build the Frontend files
         - run:
             name: Frontend build
             command: npm run frontend-build
+        #This script build the Backend files
         - run:
             name: Backend build
             command: npm run backend-build
+        #This script deploy Frontend on AWS cloud
         - run:
             name: Backend deploy
             command: npm run backend-deploy
+        #This script deploy backend on AWS cloud
         - run:
             name: Frontend deploy
             command: npm run frontend-deploy
